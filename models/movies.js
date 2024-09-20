@@ -6,16 +6,15 @@ const userSchema = new Schema ({
         type : String,
         required : true
     },
-    email : {
+    actor : {
         type : String,
         required : true
     },
-    phonenumber : {
-        type : String,
+    reviewRating : {
+        type : Number,
         required : false
     }
-
 })
 
-const User = mongoose.model('User', userSchema)
-module.exports = User
+const Movie = mongoose.model('Movie', userSchema)
+module.exports = Movie
